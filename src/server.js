@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.post('/convert-to-pdf', async (req, res) => {
     const { url } = req.body;
 
-    // Validate the URL
+    // Validate the URLm
     if (!url || !isValidHttpUrl(url)) {
         return res.status(400).json({ error: 'A valid URL must be provided.' });
     }
